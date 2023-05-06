@@ -12,6 +12,7 @@ asideBar.innerHTML = `
                 <a class="asideMenu w-full hover:hover dasdhbord" id="dasdhbord" href="index.html"><ion-icon name="bar-chart-outline" class="text-2xl font-semibold mr-3"></ion-icon>Dasdhbord</a>
                 <a class="asideMenu w-full hover:hover jobPost" id="jobPost" href="jobPost.html"><ion-icon name="bag-handle-outline" class="text-2xl font-semibold mr-3"></ion-icon>Job Post</a>
                 <a class="asideMenu w-full hover:hover companies" id="companies" href="companies.html"><ion-icon name="business-outline" class="text-2xl font-semibold mr-3"></ion-icon>Companies</a>
+                <a class="asideMenu w-full hover:hover blog flex" id="blog" href="blog.html"><span class="material-symbols-outlined text-2xl font-semibold mr-3"> rss_feed </span>Blog</a>
             </div>
         </aside>
 `;

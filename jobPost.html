@@ -16,6 +16,9 @@
   <!-- For Date Range Peeker  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
+  <!-- Google Icon  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 
 </head>
 
@@ -455,7 +458,7 @@
                   <ion-icon name="calendar-outline" class="absolute left-4 top-3"></ion-icon>
                 </div>
               </div>
-              
+
               <div class="flex justify-between ">
                 <div class="expiredDate w-full">
                   <label for="expiredDate"
@@ -475,6 +478,37 @@
                   <option value="FoodShahiBD">FoodShahiBD</option>
                   <option value="Foodpada">Foodpada</option>
                 </select>
+              </div>
+
+              <div class="qualification w-full">
+                <label for="qualification" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Qualification</label>
+                <input type="text" id="qualification" name="qualification" class="formInput bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Bachelor Degree" required="">
+              </div>
+
+              <div class="flex justify-between ">
+                <div class="offeredSalary w-[48%]">
+                  <label for="offeredSalary"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Offered
+                    Salary</label>
+                  <input type="number" id="offeredSalary" name="offeredSalary"
+                    class="formInput bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                    placeholder="15000.00" required>
+                </div>
+
+                <div class="negotiable w-[48%]">
+                  <label for="experience"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Salary Negotiable</label>
+                    <div class="flex justify-start align-middle p-2.5 pl-0">
+                      <div class="mr-4">
+                        <label for="inputRadio">Yes</label>
+                      <input type="radio" name="negotiable" id="yes" value="yes">
+                      </div>
+                      <div>
+                        <label for="inputRadio">No</label>
+                        <input type="radio" name="negotiable" id="no" value="no" checked>
+                      </div>
+                    </div>
+                </div>
               </div>
 
               <div class="flex justify-between">
@@ -506,25 +540,6 @@
               </div>
 
               <div class="flex justify-between ">
-                <div class="offeredSalary w-[48%]">
-                  <label for="offeredSalary"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Offered
-                    Salary</label>
-                  <input type="number" id="offeredSalary" name="offeredSalary"
-                    class="formInput bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                    placeholder="15000.00" required>
-                </div>
-
-                <div class="experience w-[48%]">
-                  <label for="experience"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Experience</label>
-                  <input type="text" id="experience" name="experience"
-                    class="formInput bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                    placeholder="2 Year" required>
-                </div>
-              </div>
-
-              <div class="flex justify-between ">
                 <div class="industry w-[48%]">
                   <label for="industry"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Industry</label>
@@ -549,6 +564,8 @@
                     placeholder="Bachelor Degree" required>
                 </div>
               </div>
+
+              
 
               <div class="jobDetails">
                 <label for="jobDetails" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Job
@@ -1000,12 +1017,12 @@
   <!-- Notificatin  -->
   <div id="notification"></div>
   <script src="./js/notification.js"></script>
-  <script src="./js/flowbite.min.js"></script>
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 
 
 
   <!-- Daterange  -->
-  <script src="./js/datepicker.js"></script>
+  <script src="./node_modules/flowbite-datepicker/dist/js/datepicker.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
   <!-- Iconic  -->
